@@ -1,10 +1,29 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <NavigationComponent />
   <router-view/>
+  <FooterComponent />
 </template>
+
+<script>
+
+import FooterComponent from './components/FooterComponent.vue'
+import NavigationComponent from './components/NavigationComponent.vue'
+
+
+export default {
+  setup() {
+    
+  },
+  components:{
+    FooterComponent,
+    NavigationComponent
+  }
+}
+</script>
+
+
+
+
 
 <style lang="scss">
 #app {
@@ -13,18 +32,21 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin:0px;
+  padding:0px;
 }
 
 nav {
-  padding: 30px;
 
   a {
     font-weight: bold;
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #1d9612;;
     }
   }
 }
+
+
 </style>
