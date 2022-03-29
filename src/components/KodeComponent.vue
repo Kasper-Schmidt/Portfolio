@@ -3,7 +3,7 @@
 
 
           
-      <!-- <div id="skills-section">
+      <div id="skills-section">
             <h1>Skills</h1>
             <div class="container">
 
@@ -50,7 +50,7 @@
             </div>
 
             </div>
-      </div> -->
+      </div> 
     
   </div>
 </template>
@@ -60,36 +60,6 @@ export default {
 
 }
 
-/* const skillsSection = document.getElementById('skills-section');
-
-const progressBars = document.querySelectorAll('.progress-bar');
-
-function showProgress(){
-    progressBars.forEach(progressBar=> {
-    const value = progressBar.dataset.progress;
-    progressBar.style.opacity = 1;
-    progressBar.style.width = `${value}%`
-    });
-}
-
-function hideProgress(){
-    progressBars.forEach(p => {
-        p.style.opacity = 0;
-        p.style.width = 0;
-    });
-}
-
-window.addEventListener('scroll',() => {
-    const sectionPos = skillsSection.getBoundingClientRect().top;
-    const screenPos = window.innerHeight;
-
-    if(sectionPos < screenPos) {
-        showProgress();
-    }
-    else {
-        hideProgress();
-    }
-}); */
 
 
 
@@ -104,13 +74,13 @@ window.addEventListener('scroll',() => {
 <style>
 
 
-/* .skills-section h1 {
+.skills-section h1 {
     margin-top:1%;
     text-align: center;
 }
 
 .container {
-    width: 40%;
+    width: 30%;
     margin:20px auto;
 
 }
@@ -130,8 +100,8 @@ p {
 }
 
 .progress .progress-bar {
-    width: 0%;
-    opacity: 0;
+    width: 50%;
+    opacity: 1;
     height: 100%;
     background-color: #1d9612;
     border-radius: 980px;
@@ -145,7 +115,7 @@ p {
     top: 0;
     right: 0;
     color: white;
-} */
+} 
 
 
 

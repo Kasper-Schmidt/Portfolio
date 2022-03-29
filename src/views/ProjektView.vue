@@ -15,17 +15,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 <script>
 import CardComponent from '../components/CardComponent.vue'
 import ProjekterComponent from '../components/ProjekterComponent.vue'

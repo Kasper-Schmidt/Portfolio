@@ -32,6 +32,11 @@ export default {
 
 <style lang="scss" scoped>
 
+* {
+  margin:0;
+  padding: 0;
+}
+
 .navdiv {
   padding:20px;
   display: flex;
