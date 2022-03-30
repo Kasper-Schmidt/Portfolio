@@ -15,8 +15,14 @@
           <div class="knapsome">
             <button class="kontaktmig">Kontakt</button>
             <div class="someicon">
-              <a href="https://www.facebook.com/kasper.schmidt.9" target=_blank><i class="fa fa-facebook"></i></a>
-              <a href="https://www.instagram.com/schmidtkasper/" target=_blank><i class="fa fa-instagram"></i></a>
+              <a
+                href="https://www.facebook.com/kasper.schmidt.9"
+                target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/schmidtkasper/" target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
               <i class="fa fa-linkedin"></i>
             </div>
           </div>
@@ -30,18 +36,41 @@
     </div>
   </div>
 
-  <KodeComponent/>
+<div class="personlighed">
+  <PersonlighedComponent/>
+</div>
+
+
+
+  <div class="progbars">
+    <div class="adobeboks">
+      <AdobeComponent />
+    </div>
+
+    <div class="mellem">
+
+    </div>
+
+    <div class="kodeboks">
+      <KodeComponent />
+    </div>
+  </div>
 </template>
 
-<script>
-// @ is an alias to /src
 
-import KodeComponent from '../components/KodeComponent.vue'
+
+
+<script>
+import AdobeComponent from "@/components/AdobeComponent.vue";
+import KodeComponent from "../components/KodeComponent.vue";
+import PersonlighedComponent from "@/components/PersonlighedComponent.vue";
 
 export default {
   name: "HomeView",
   components: {
-    KodeComponent
+    KodeComponent,
+    AdobeComponent,
+    PersonlighedComponent
   },
 };
 </script>
@@ -49,14 +78,18 @@ export default {
 
 
 
-<style lang="scss" scoped>
 
-@import 
-url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+
+
+
+<style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 .home {
   height: 100vh;
   width: 100vw;
   background-color: #e6e6e6;
+  margin-bottom:2%;
 }
 
 .venhoj {
@@ -79,14 +112,13 @@ h1 {
   color: #1d9612;
   font-size: 55px;
   font-family: "Poppins", sans-serif;
-  
 }
 
 h2 {
   font-size: 45px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-    color: #696969;
+  color: #696969;
 }
 
 .videnboks {
@@ -115,7 +147,7 @@ p {
 
 .someicon {
   margin-top: 25px;
-  margin-left:8px;
+  margin-left: 8px;
 }
 
 .fa {
@@ -138,12 +170,34 @@ p {
   margin-top: 50px;
 }
 
+.progbars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom:2%;
+}
 
+.personlighed {
+  height: 400px;
+  width:100%
+}
 
+.adobeboks {
+width: 30%;
+height: auto;
+}
 
+.mellem {
+width: 40%;
+height: auto;
+align-content: center;
 
+}
 
-
-
-
+.kodeboks {
+width: 30%;
+height: auto;
+align-content: center;
+}
 </style>

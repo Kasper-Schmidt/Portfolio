@@ -53,7 +53,7 @@ export default {
 
 
 
-<style>
+<style lang="scss" scoped>
 
 .ydreboks {
  margin: 1% 1% 1% 1%;
