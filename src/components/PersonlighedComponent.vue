@@ -210,11 +210,23 @@ export default {
 @keyframes loading-5 {
     0% {
         -webkit-transform: rotate(0deg);
-        transform: rotate(75deg)
+        transform: rotate(0deg)
     }
 
     100% {
         -webkit-transform: rotate(68.4deg);
+        transform: rotate(68.4deg)
+    }
+}
+
+@keyframes loading-6 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(75.4deg);
         transform: rotate(75.4deg)
     }
 }

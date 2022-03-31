@@ -1,4 +1,5 @@
 <template>
+<section>
   <div class="home">
     <div class="venhoj">
       <div class="ven">
@@ -35,13 +36,17 @@
       </div>
     </div>
   </div>
+</section>
 
-<div class="personlighed">
+
+<section>
+  <div class="personlighed">
   <PersonlighedComponent/>
-</div>
+  </div>
+</section>
 
 
-
+<section>
   <div class="progbars">
     <div class="adobeboks">
       <AdobeComponent />
@@ -55,6 +60,7 @@
       <KodeComponent />
     </div>
   </div>
+  </section>
 </template>
 
 
@@ -85,6 +91,11 @@ export default {
 
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+section {
+  height: 100vh;
+}
+
 .home {
   height: 100vh;
   width: 100vw;

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="projektområde">
 
     <CardComponent />
     <ProjekterComponent />
@@ -33,5 +33,8 @@ export default {
 
 <style lang="scss" scoped>
 
+.projektområde {
+  margin-top:4%;
+}
 
 </style>
