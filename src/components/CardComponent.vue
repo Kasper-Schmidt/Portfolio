@@ -2,22 +2,30 @@
 
  
 
+
  <div class="container-md"> <!-- switch to margin x over MD size(fluid and !fluid) -->
   <div class="row">
+<transition-group
+  appear
 
-   <div v-for="project in projects" :key="project" class="col-12 col-sm-6 " >
+  @before-enter="beforeEnter"
+  @enter="enter"
+  >
+   <div v-for="(project, index) in projects" :key="project" class="col-12 col-sm-6 " :data-index="index">
       <div class="card" style="">
         <img :src="project.projectURL" class="card-img-top" alt="...">
         <div class="card-body justify-content-start">
           <h5 id="cardOne" class="card-title ">{{project.projectTitle}}</h5>
           <p class="card-text">{{project.projectDescription}}</p>          
-          <p>Category: <span :class="project.projectCategory" id="projectCategoryText">{{project.projectCategory}}</span></p>          
+          <p id="categorytekst">Category: <span :class="project.projectCategory" id="projectCategoryText">{{project.projectCategory}}</span></p>          
           <a href="#" class="btn btn-primary">Show more <!-- {{project.projectID}} --></a>
         </div>
       </div>
     </div>
+    </transition-group>
   </div>
 </div>
+
 
 
 
@@ -31,10 +39,29 @@
 
 <script>
 import { ref } from 'vue'
+import gsap from 'gsap'
 
 
 export default {
   setup() {
+
+    const beforeEnter = (el) => {
+      el.style.transform = 'translateY(+60px)'
+      el.style.opacity = 0
+    }
+
+    const enter = (el, done) => {
+      gsap.to(el, {
+        duration: 0.8,
+        y:0,
+        opacity: 1,
+        onComplete:done,
+        delay: el.dataset.index * 0.2,
+      })
+    }
+
+  
+
     
 
     let projects = ref([
@@ -90,7 +117,7 @@ export default {
     ])
 
     return {
-      projects,
+      projects, beforeEnter, enter,
 
  
 
@@ -109,7 +136,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
 
 #cardOne {
-  margin:7px;
+  margin:0px 0px 7px 0px;
+  font-size: 19px;
   
 }
 
@@ -121,12 +149,19 @@ export default {
   margin:2px;
   text-align: left;
   font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
 }
 
 .category {
   margin:2px;
   text-align: left;
   font-family: 'Roboto', sans-serif;
+}
+
+#categorytekst {
+  font-style: italic;
+  font-size: 15px;
 }
 
 p {
@@ -151,6 +186,7 @@ p span {
 #projectCategoryText {
   font-weight: bold;
   font-size: 14px;
+  
   
 }
 
