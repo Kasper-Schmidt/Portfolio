@@ -49,10 +49,10 @@ export default {
       el.style.transform = 'translateY(+60px)'
       el.style.opacity = 0
     }
-
+ 
     const enter = (el, done) => {
       gsap.to(el, {
-        duration: 0.8,
+        duration: 0.5,
         y:0,
         opacity: 1,
         onComplete:done,
@@ -76,7 +76,7 @@ export default {
         projectID: 2,
         projectTitle: "Mini Me",
         projectDescription: "En illustration af mig tegnet i Adobe Illustrator",
-        projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
+        projectURL: require("../assets/MiniMe.jpg"),
         projectCategory: "Drawing",
       },
            {
