@@ -34,7 +34,7 @@ export default {
 <style lang="scss" scoped>
 
 .projektområde {
-  margin-top:4%;
+  margin-top:5%;
 }
 
 </style>

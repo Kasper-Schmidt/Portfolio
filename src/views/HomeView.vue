@@ -9,7 +9,7 @@
         </div>
         <div class="videnboks">
           <p>
-            Multimediedesignerstuderende <br />
+            Multimediedesignstuderende <br />
             Advanced Mastermind Forex Trader ved BSAPPSFX
           </p>
 
@@ -135,11 +135,15 @@ h2 {
 .videnboks {
   text-align: left;
   margin: 40px 0px 0px 100px;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 p {
   font-size: 20px;
   margin: 0px;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .knapsome {

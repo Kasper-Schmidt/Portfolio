@@ -5,14 +5,14 @@
  <div class="container-md"> <!-- switch to margin x over MD size(fluid and !fluid) -->
   <div class="row">
 
-   <div v-for="project in projects" :key="project" class="col-12 col-sm-6 col-md-4 mb-4" >
+   <div v-for="project in projects" :key="project" class="col-12 col-sm-6 " >
       <div class="card" style="">
         <img :src="project.projectURL" class="card-img-top" alt="...">
         <div class="card-body justify-content-start">
           <h5 id="cardOne" class="card-title ">{{project.projectTitle}}</h5>
-          <p class="card-text">{{project.projectDescription}}</p>
-          <p class="category">Category: <span class="categoryclass">{{project.projectCategory}}</span></p>
-          <a href="#" class="btn btn-primary">Show more {{project.projectID}}</a>
+          <p class="card-text">{{project.projectDescription}}</p>          
+          <p>Category: <span :class="project.projectCategory" id="projectCategoryText">{{project.projectCategory}}</span></p>          
+          <a href="#" class="btn btn-primary">Show more <!-- {{project.projectID}} --></a>
         </div>
       </div>
     </div>
@@ -32,6 +32,7 @@
 <script>
 import { ref } from 'vue'
 
+
 export default {
   setup() {
     
@@ -40,38 +41,52 @@ export default {
       {
         projectID: 1,
         projectTitle: "Nirvana",
-        projectDescription: "Fan-page for Nirvana",
+        projectDescription: "Hjemmeside om Nirvana",
         projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
         projectCategory: "Web",
       }, 
       {
         projectID: 2,
         projectTitle: "Mini Me",
-        projectDescription: "An illustration of me drawn in Illustrator",
+        projectDescription: "En illustration af mig tegnet i Adobe Illustrator",
         projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
         projectCategory: "Drawing",
       },
            {
         projectID: 3,
         projectTitle: "Esbjerg Commercial",
-        projectDescription: "Commercial for Esbjerg Event Festival",
+        projectDescription: "Reklamevideo for vores Esbjerg Event Festival i projektuge",
         projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
         projectCategory: "Video",
       },
            {
         projectID: 4,
         projectTitle: "Esbjerg Commercial",
-        projectDescription: "Shows events for Esbjerg Event Festival",
+        projectDescription: "Reklamevideo for vores Esbjerg Event Festival i projektuge",
         projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
         projectCategory: "Video",
       },
             {
         projectID: 5,
         projectTitle: "Video Portfolio",
-        projectDescription: "Video about me",
+        projectDescription: "Videoportfolio af mig",
         projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
         projectCategory: "Video",
-      }
+      },
+            {
+        projectID: 6,
+        projectTitle: "Halloween Fest",
+        projectDescription: "Plakat til Halloween fest",
+        projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
+        projectCategory: "Poster",
+      },
+            {
+        projectID: 7,
+        projectTitle: "Telesikring",
+        projectDescription: "Webdesign for Telesikring",
+        projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
+        projectCategory: "Webdesign",
+      },
     ])
 
     return {
@@ -91,8 +106,79 @@ export default {
 
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
 
+#cardOne {
+  margin:7px;
+  
+}
 
+.card {
+  margin-bottom:4%;
+}
 
+.card-text {
+  margin:2px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+
+.category {
+  margin:2px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  text-align: left;
+}
+
+p span {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+  margin-top:8px;
+  background-color: #1d9612;
+  border:none;
+  display: flex;
+  align-content: center;
+  max-width: 100px;
+  
+}
+
+#projectCategoryText {
+  font-weight: bold;
+  font-size: 14px;
+  
+}
+
+  $categoryVideoText: darkviolet;
+  $categoryPhotoText: darkgreen;
+  $categoryWebText: darkblue;
+  $categoryPosterText: darkred;
+  $categoryDrawingText: rgb(255, 0, 0);
+  $categoryWebdesignText:orange;
+  
+
+.Video {
+  color: $categoryVideoText
+}
+.Web {
+  color: $categoryWebText
+}
+.Photo {
+  color: $categoryPhotoText
+}
+.Poster {
+  color: $categoryPosterText
+}
+.Drawing {
+  color: $categoryDrawingText
+}
+.Webdesign {
+  color: $categoryWebdesignText
+}
 
 </style>
