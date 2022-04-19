@@ -8,7 +8,7 @@
           <div class="card-body justify-content-start">
             <h5 id="cardOne" class="card-title ">{{project.projectTitle}}</h5>
             <p class="card-text">{{project.projectDescription}}</p>
-            <p>Category: {{project.projectCategory}}</p>
+          
 
           </div>
         </div>
