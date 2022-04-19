@@ -1,8 +1,10 @@
 <template>
   <div class="navdiv">
     <div class="navndiv">
-     <p>Kasper <span>Schmidt</span></p>
-     </div>
+        <a href="/">
+          <img id="mitlogo" src="../assets/mitlogo.png" alt="">
+        </a>
+    </div>
     <nav>
         <router-link to="/" class="hover-underline-animation" >Hjem     </router-link>     |
         <router-link to="projekter" class="hover-underline-animation">Projekter     </router-link>     |
@@ -47,10 +49,17 @@ export default {
 
 .navndiv {
   margin:0px;
+  display: flex;
 }
 
 nav {
-  margin-left: 375px;
+  margin-left: 430px;
+  font-size: 17px;
+}
+
+#mitlogo {
+  width: 70px;
+  height: 70px;
 }
 
 
