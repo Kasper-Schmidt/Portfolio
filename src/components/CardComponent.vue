@@ -1,17 +1,13 @@
 <template>
 
- 
-
-
  <div class="container-md"> <!-- switch to margin x over MD size(fluid and !fluid) -->
   <div class="row">
 <transition-group
   appear
-
   @before-enter="beforeEnter"
   @enter="enter"
   >
-   <div v-for="(project, index) in projects" :key="project" class="col-12 col-sm-6 " :data-index="index">
+   <div v-for="(project, index) in projects" :key="project" class="col-12 col-sm-6 kort" :data-index="index">
       <div class="card" style="">
         <img :src="project.projectURL" class="card-img-top" alt="...">
         <div class="card-body justify-content-start">
@@ -25,9 +21,6 @@
     </transition-group>
   </div>
 </div>
-
-
-
 
 </template>
 
@@ -79,39 +72,46 @@ export default {
         projectURL: require("../assets/MiniMe.jpg"),
         projectCategory: "Drawing",
       },
-           {
+              {
         projectID: 3,
-        projectTitle: "Esbjerg Commercial",
+        projectTitle: "Verner Panton Hjemmeside",
+        projectDescription: "Hjemmeside der omhandler Verner Panton",
+        projectURL: require("../assets/vernerpantonforside.jpg"),
+        projectCategory: "Web",
+      },
+           {
+        projectID: 4,
+        projectTitle: "Esbjerg Reklamevideo",
         projectDescription: "Reklamevideo for vores Esbjerg Event Festival i projektuge",
         projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
         projectCategory: "Video",
       },
            {
-        projectID: 4,
-        projectTitle: "Esbjerg Commercial",
+        projectID: 5,
+        projectTitle: "Esbjerg Reklamevideo",
         projectDescription: "Reklamevideo for vores Esbjerg Event Festival i projektuge",
         projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
         projectCategory: "Video",
       },
             {
-        projectID: 5,
+        projectID: 6,
         projectTitle: "Video Portfolio",
         projectDescription: "Videoportfolio af mig",
         projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
         projectCategory: "Video",
       },
             {
-        projectID: 6,
+        projectID: 7,
         projectTitle: "Halloween Fest",
         projectDescription: "Plakat til Halloween fest",
-        projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
-        projectCategory: "Poster",
+        projectURL: require("../assets/halloweenforside.jpg"),
+        projectCategory: "Drawing",
       },
             {
-        projectID: 7,
+        projectID: 8,
         projectTitle: "Telesikring",
         projectDescription: "Webdesign for Telesikring",
-        projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
+        projectURL: require("../assets/Telesikringforside.jpg"),
         projectCategory: "Webdesign",
       },
     ])
@@ -135,14 +135,22 @@ export default {
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
 
+
 #cardOne {
   margin:0px 0px 7px 0px;
   font-size: 19px;
   
 }
 
+.card-img-top {
+  max-height: 350px;
+  max-width: 815px;
+}
+
+
 .card {
   margin-bottom:4%;
+  border: 1px solid #afafaf;
 }
 
 .card-text {
@@ -160,7 +168,7 @@ export default {
 }
 
 #categorytekst {
-  font-style: italic;
+font-style: italic;
   font-size: 15px;
 }
 
@@ -190,9 +198,9 @@ p span {
   
 }
 
-  $categoryVideoText: darkviolet;
-  $categoryPhotoText: darkgreen;
-  $categoryWebText: darkblue;
+  $categoryVideoText: rgb(139, 31, 185);
+  $categoryPhotoText: rgb(15, 115, 15);
+  $categoryWebText: rgb(32, 32, 176);
   $categoryPosterText: darkred;
   $categoryDrawingText: rgb(255, 0, 0);
   $categoryWebdesignText:orange;
@@ -202,7 +210,9 @@ p span {
   color: $categoryVideoText
 }
 .Web {
-  color: $categoryWebText
+  color: $categoryWebText;
+
+
 }
 .Photo {
   color: $categoryPhotoText

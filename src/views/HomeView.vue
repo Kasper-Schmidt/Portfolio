@@ -16,15 +16,20 @@
           <div class="knapsome">
             <button class="kontaktmig">Kontakt</button>
             <div class="someicon">
+              
               <a
                 href="https://www.facebook.com/kasper.schmidt.9"
                 target="_blank"
-                ><i class="fa fa-facebook"></i
-              ></a>
-              <a href="https://www.instagram.com/schmidtkasper/" target="_blank"
-                ><i class="fa fa-instagram"></i
-              ></a>
+              >
+                <i class="fa fa-facebook"></i>
+              </a>
+
+              <a href="https://www.instagram.com/schmidtkasper/" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+              
               <i class="fa fa-linkedin"></i>
+
             </div>
           </div>
         </div>
@@ -148,6 +153,7 @@ p {
 
 .knapsome {
   display: flex;
+
 }
 
 .kontaktmig {
@@ -155,9 +161,12 @@ p {
   height: 40px;
   border-radius: 980px;
   color: white;
-  background-color: #1d9612;
+  background-color: #16947e;
   border: none;
   margin-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+
 }
 
 .someicon {
@@ -166,7 +175,7 @@ p {
 }
 
 .fa {
-  color: green;
+  color: #16947e;
   font-size: 150%;
   margin-left: 8px;
 }

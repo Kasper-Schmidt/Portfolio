@@ -6,7 +6,7 @@
     <nav>
         <router-link to="/" class="hover-underline-animation" >Hjem     </router-link>     |
         <router-link to="projekter" class="hover-underline-animation">Projekter     </router-link>     |
-        <router-link to="/om-mig" class="hover-underline-animation">Om mig</router-link>
+        <router-link to="/om-mig" class="hover-underline-animation">Kontakt</router-link>
     </nav>
   </div>
 </template>
@@ -75,7 +75,7 @@ nav {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #1d9612;
+  background-color: #16947e;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
   
