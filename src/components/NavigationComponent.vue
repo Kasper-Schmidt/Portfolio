@@ -53,7 +53,7 @@ export default {
 }
 
 nav {
-  margin-left: 430px;
+  margin-left: 450px;
   font-size: 17px;
 }
 

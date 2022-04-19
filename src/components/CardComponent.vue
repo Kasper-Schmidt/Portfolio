@@ -58,21 +58,22 @@ export default {
     
 
     let projects = ref([
-     
-      {
-        projectID: 1,
-        projectTitle: "Mini Me",
-        projectDescription: "En illustration af mig tegnet i Adobe Illustrator",
-        projectURL: require("../assets/MiniMe.jpg"),
-        projectCategory: "Drawing",
-      },
+
              {
-        projectID: 2,
+        projectID: 1,
         projectTitle: "Telesikring",
         projectDescription: "Webdesign for Telesikring",
         projectURL: require("../assets/Telesikringforside.jpg"),
         projectCategory: "Webdesign",
       },
+      {
+        projectID: 2,
+        projectTitle: "Mini Me",
+        projectDescription: "En illustration af mig tegnet i Adobe Illustrator",
+        projectURL: require("../assets/MiniMe.jpg"),
+        projectCategory: "Drawing",
+      },
+     
               {
         projectID: 3,
         projectTitle: "Verner Panton Hjemmeside",
@@ -108,8 +109,6 @@ export default {
         projectURL: "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80",
         projectCategory: "Video",
       },
-       
-     
        {
         projectID: 8,
         projectTitle: "Nirvana",
@@ -186,7 +185,7 @@ p span {
 
 .btn {
   margin-top:8px;
-  background-color: #1d9612;
+  background-color: #16947e;
   border:none;
   display: flex;
   align-content: center;

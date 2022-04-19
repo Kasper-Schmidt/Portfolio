@@ -17,7 +17,7 @@
             <button class="kontaktmig">Kontakt</button>
             <div class="someicon">
               
-              <a
+           <!--    <a
                 href="https://www.facebook.com/kasper.schmidt.9"
                 target="_blank"
               >
@@ -26,9 +26,11 @@
 
               <a href="https://www.instagram.com/schmidtkasper/" target="_blank">
                 <i class="fa fa-instagram"></i>
-              </a>
+              </a> -->
               
-              <i class="fa fa-linkedin"></i>
+               <a href="https://www.linkedin.com/in/schmidt-kasper/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
 
             </div>
           </div>
@@ -236,5 +238,14 @@ align-content: center;
 width: 30%;
 height: auto;
 align-content: center;
+}
+
+
+
+
+@media all and (max-width: 800px) {
+  .kontaktmig {
+    background-color: black;
+  }
 }
 </style>
