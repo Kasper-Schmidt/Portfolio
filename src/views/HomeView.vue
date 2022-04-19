@@ -38,6 +38,7 @@
       <div class="hoj">
         <img src="" alt="" />
         <div class="hvidcirkel"></div>
+        <img id="migbillede" src="../assets/Migforside.png" alt="">
       </div>
     </div>
   </div>
@@ -65,7 +66,11 @@
       <KodeComponent />
     </div>
   </div>
-  </section>
+</section>
+    <div>
+          <KontaktComponent />
+
+  </div>
 </template>
 
 
@@ -75,13 +80,16 @@
 import AdobeComponent from "@/components/AdobeComponent.vue";
 import KodeComponent from "../components/KodeComponent.vue";
 import PersonlighedComponent from "@/components/PersonlighedComponent.vue";
+import KontaktComponent from "@/components/KontaktComponent.vue";
+
 
 export default {
   name: "HomeView",
   components: {
     KodeComponent,
     AdobeComponent,
-    PersonlighedComponent
+    PersonlighedComponent,
+    KontaktComponent
   },
 };
 </script>
@@ -186,12 +194,17 @@ p {
 }
 
 .hvidcirkel {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   background-color: white;
-  margin-left: 40px;
-  margin-top: 50px;
+  margin-top: 60px;
+}
+
+#migbillede {
+  height: auto;
+  width: 75%;
+  transform:translate(-20%,-83.2%);
 }
 
 .progbars {
