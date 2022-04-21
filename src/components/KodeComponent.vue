@@ -302,4 +302,28 @@ p {
     0% { width: 0%; }
 }
 
+
+
+
+@media all and (max-width:750px) {
+   
+   h2 {
+        font-size: 20px;
+} 
+
+}
+
+
+
+
+@media all and (max-width:350px) {
+    h2 {
+        font-size: 18px;
+    }
+
+.container {
+    margin-left:5%;
+}
+}
+
 </style>

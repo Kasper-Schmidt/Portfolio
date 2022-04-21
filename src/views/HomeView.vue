@@ -49,14 +49,14 @@
 </section>
 
 
-<section>
+
   <div class="personlighed">
   <PersonlighedComponent/>
   </div>
-</section>
 
 
-<section>
+
+
   <div class="progbars">
     <div class="adobeboks">
       <AdobeComponent />
@@ -70,7 +70,7 @@
       <KodeComponent />
     </div>
   </div>
-</section>
+
 
 </template>
 
@@ -252,6 +252,125 @@ width: 35%;
 height: auto;
 align-content: center;
 margin-right:4%;
+
+}
+
+/* Media: Responsive til tablet størrelse */
+@media all and (max-width:750px) {
+  .h1boks {
+    margin: 75px 0px 0px 50px;
+  }
+
+  .ven {
+    width: 50%;
+  }
+
+  .hoj {
+    width: 50%;
+  }
+
+  .videnboks {
+  margin: 30px 0px 0px 50px;
+  width: 60%;
+  
+}
+
+#migbillede {
+  height: auto;
+  width: 100%;
+  transform:translate(-5%,-82.5%);
+}
+
+.personboks {
+  display:flex;
+}
+
+.adobeboks {
+  width: 45%;
+}
+
+.mellem {
+  width: 10%;
+
+}
+
+.kodeboks {
+  width: 45%;
+
+}
+
+.personlighed {
+  height: 500px;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Media: Responsive til mobil størrelse */
+@media all and (max-width:350px) {
+
+#migbillede {
+  display:none;
+}
+
+.hvidcirkel {
+    display:none;
+
+}
+
+.ven {
+  width: 80%;
+}
+
+.h1boks {
+    margin: 75px 0px 0px 25px;
+}
+
+.videnboks {
+  margin: 30px 0px 0px 25px;
+  width: 80%;
+  
+}
+
+.personlighed {
+  height: 1050px;
+}
+
+.progbars {
+  flex-direction: column;
+}
+
+.adobeboks {
+  width: 90%;
+  margin-bottom:10%;
+}
+
+.kodeboks {
+  width: 90%;
+}
+
+
+
+
+
+
+
+
 
 }
 

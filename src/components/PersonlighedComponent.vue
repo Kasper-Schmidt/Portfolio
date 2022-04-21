@@ -92,6 +92,10 @@ export default {
     top: 0
 }
 
+h2 {
+    margin:3%;
+}
+
 .progress .progress-left .progress-bar {
     left: 100%;
     border-top-right-radius: 80px;
@@ -241,6 +245,8 @@ export default {
         transform: rotate(75.4deg)
     }
 }
+
+
 
 
 </style>

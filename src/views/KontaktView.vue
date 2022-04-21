@@ -222,6 +222,8 @@ h1 {
 }
 
 
+/* Media: Responsive til tablet størrelse */
+
 @media all and (max-width:750px) {
 #kontaktbillede {
   width: auto;
@@ -258,6 +260,7 @@ p {
 }
 
 
+/* Media: Responsive til mobil størrelse */
 @media all and (max-width:350px) {
 
 #kontaktbillede {

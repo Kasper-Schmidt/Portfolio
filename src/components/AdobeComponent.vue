@@ -145,4 +145,39 @@ p {
     0% { width: 0%; }
 }
 
+
+@media all and (max-width:750px) {
+   
+   h2 {
+        font-size: 20px;
+} 
+
+}
+
+
+@media all and (max-width:350px) {
+
+.adobe {
+    width: 100%;
+}
+
+h2 {
+        font-size: 18px;
+}
+
+.row {
+    width: 100%;
+
+}
+
+.adobeboks {
+    width: 100%;
+}
+
+.container {
+    width:100%;
+    
+}
+}
+
 </style>

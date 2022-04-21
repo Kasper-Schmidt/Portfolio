@@ -50,6 +50,7 @@ export default {
   display: flex;
   align-items: center;
   background-color:#d6d6d6;
+  width: 100vw;
 
 }
 
@@ -132,6 +133,8 @@ span {
 
 }
 
+
+/* Media: Responsive til tablet størrelse */
 @media all and (max-width:750px) {
   nav {
   margin-left: 190px;
@@ -144,9 +147,12 @@ span {
 }
 }
 
+/* Media: Responsive til mobil størrelse */
 
 @media all and (max-width:350px) {
-  nav {
+
+
+nav {
   margin-left: 40px;
   font-size: 17px;
 }
