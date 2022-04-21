@@ -222,6 +222,94 @@ h1 {
 }
 
 
+@media all and (max-width:750px) {
+#kontaktbillede {
+  width: auto;
+  height: 300px;
+}
+
+.kontaktbokse {
+  gap:30px;
+  transform:translate(30%,30%);
+
+}
+
+.boks {
+  width: 250px;
+  height: 200px;
+  background-color: #ffffff;
+}
+
+p {
+  margin:4px;
+}
+
+#telefonbillede {
+  height: 30px;
+  width: 30px;
+  margin:4px;
+}
+
+.kontaktpopup {
+  z-index: +99999;
+}
+
+
+}
+
+
+@media all and (max-width:350px) {
+
+#kontaktbillede {
+  width: auto;
+  height: 175px;
+}
+
+
+.kontaktbokse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform:translate(12%,45%);
+    gap:15px;
+
+
+
+
+}
+
+.boks {
+  border: 1px solid black;
+
+
+}
+
+.top {
+  height: 615px;
+}
+
+.kontaktpopup {
+  display: none;
+
+
+}
+
+
+.close {
+  display: none;
+}
+
+
+
+
+
+
+
+
+}
+
+
 
 
 

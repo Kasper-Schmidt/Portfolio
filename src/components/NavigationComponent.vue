@@ -132,5 +132,38 @@ span {
 
 }
 
+@media all and (max-width:750px) {
+  nav {
+  margin-left: 190px;
+  font-size: 17px;
+}
+
+#opencv {
+  margin-left:125px;
+
+}
+}
+
+
+@media all and (max-width:350px) {
+  nav {
+  margin-left: 40px;
+  font-size: 17px;
+}
+
+#opencv {
+  margin-left:20px;
+  width:80px;
+  height: 30px;
+  font-size: 13px;
+
+}
+
+
+
+
+
+} 
+
 </style>
 
