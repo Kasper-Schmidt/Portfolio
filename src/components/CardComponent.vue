@@ -92,6 +92,7 @@ export default {
 .card {
   margin-bottom:4%;
   border: 1px solid #afafaf;
+  // box-shadow: 3px 3px #00000088;
 }
 
 .card-text {
@@ -128,14 +129,18 @@ p span {
   border:none;
   display: flex;
   align-content: center;
-  max-width: 100px;
-  
+  width: 82px;
+  border-radius:5px;
+}
+
+.btn:hover {
+    background-color: #0d6859;
+
 }
 
 #projectCategoryText {
   font-weight: bold;
   font-size: 14px;
-  
   
 }
 
@@ -167,5 +172,10 @@ p span {
 .Webdesign {
   color: $categoryWebdesignText
 }
+
+a {
+  text-decoration: none;
+}
+
 
 </style>

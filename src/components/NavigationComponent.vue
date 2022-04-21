@@ -7,9 +7,15 @@
     </div>
     <nav>
         <router-link to="/" class="hover-underline-animation" >Hjem     </router-link>     |
-        <router-link to="projekter" class="hover-underline-animation">Projekter     </router-link>     |
-        <router-link to="/om-mig" class="hover-underline-animation">Kontakt</router-link>
+        <router-link to="/projekter" class="hover-underline-animation">Projekter     </router-link>     |
+        <router-link to="/Kontakt" class="hover-underline-animation">Kontakt</router-link>
     </nav>
+
+    <div class="cvboks">
+      <a href="https://docs.google.com/document/d/161nJWIXML9WvawkmZlZY1etunDE4kS-IxIN02e-EfNQ/edit?usp=sharing" target=_blank>
+      <button id="opencv">Åben CV</button>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -40,10 +46,10 @@ export default {
 }
 
 .navdiv {
-  padding:20px;
+  padding:10px;
   display: flex;
   align-items: center;
-  background-color:#e6e6e6;
+  background-color:#d6d6d6;
 
 }
 
@@ -108,6 +114,22 @@ span {
   font-size: 20px;
   color: #1d9612;
   font-weight: bold;
+}
+
+
+#opencv {
+  width:90px;
+  height: 40px;
+  background-color: #16947e;
+  border: 1px solid #000000;
+  margin-left:400px;
+  border-radius: 10px;
+  color:white;
+}
+
+#opencv:hover {
+      background-color: #0d6859;
+
 }
 
 </style>

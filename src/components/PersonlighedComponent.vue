@@ -119,7 +119,7 @@ export default {
 }
 
 .progress.blue .progress-bar {
-    border-color: #2dbf20;
+    border-color: #1d9612;
 }
 
 .progress.blue .progress-left .progress-bar {
@@ -127,7 +127,7 @@ export default {
 }
 
 .progress.yellow .progress-bar {
-    border-color: #2dbf20;
+    border-color: #1d9612;
 }
 
 .progress.yellow .progress-left .progress-bar {
@@ -135,7 +135,7 @@ export default {
 }
 
 .progress.green .progress-bar {
-    border-color: #2dbf20;
+    border-color: #1d9612;
 }
 
 .progress.green .progress-left .progress-bar {
@@ -143,7 +143,7 @@ export default {
 }
 
 .progress.gold .progress-bar {
-    border-color: #2dbf20;
+    border-color: #1d9612;
 }
 
 .progress.gold .progress-left .progress-bar {
@@ -151,7 +151,7 @@ export default {
 }
 
 .progress.brown .progress-bar {
-    border-color: #2dbf20;
+    border-color: #1d9612;
 }
 
 .progress.brown .progress-left .progress-bar {

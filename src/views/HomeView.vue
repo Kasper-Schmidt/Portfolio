@@ -14,7 +14,9 @@
           </p>
 
           <div class="knapsome">
-            <button class="kontaktmig">Kontakt</button>
+            <a href="/Kontakt">
+              <button class="kontaktmig">Kontakt</button>
+            </a>
             <div class="someicon">
               
            <!--    <a
@@ -69,10 +71,7 @@
     </div>
   </div>
 </section>
-    <div>
-          <KontaktComponent />
 
-  </div>
 </template>
 
 
@@ -82,7 +81,7 @@
 import AdobeComponent from "@/components/AdobeComponent.vue";
 import KodeComponent from "../components/KodeComponent.vue";
 import PersonlighedComponent from "@/components/PersonlighedComponent.vue";
-import KontaktComponent from "@/components/KontaktComponent.vue";
+
 
 
 export default {
@@ -91,7 +90,6 @@ export default {
     KodeComponent,
     AdobeComponent,
     PersonlighedComponent,
-    KontaktComponent
   },
 };
 </script>
@@ -108,11 +106,6 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 
-
-
-
-
-@media all and (max-width: 1300px) {
 
 section {
   height: 100vh;
@@ -183,8 +176,13 @@ p {
   margin-top: 15px;
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
-
 }
+
+.kontaktmig:hover {
+  background-color: #0d6859;
+}
+
+
 
 .someicon {
   margin-top: 25px;
@@ -195,6 +193,11 @@ p {
   color: #16947e;
   font-size: 150%;
   margin-left: 8px;
+}
+
+.fa:hover {
+  color: #0d6859;
+
 }
 
 .hoj {
@@ -224,34 +227,33 @@ p {
   margin-bottom:2%;
 }
 
+
+
 .personlighed {
   height: 400px;
   width:100%
 }
 
 .adobeboks {
-width: 30%;
+width: 35%;
 height: auto;
+margin-left:4%;
 }
 
 .mellem {
-width: 40%;
+width: 30%;
 height: auto;
 align-content: center;
 
 }
 
 .kodeboks {
-width: 30%;
+width: 35%;
 height: auto;
 align-content: center;
+margin-right:4%;
+
 }
 
 
-
-
-
-
-  
-}
 </style>
