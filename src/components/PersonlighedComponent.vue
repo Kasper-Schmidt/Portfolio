@@ -1,6 +1,9 @@
 <template>
   <div class="row d-flex mt-100">
-    <div class="col-md-6">
+    <div class="personbox">
+        <h2>Personlighedstest</h2>
+        <div class="col-md-6">
+    </div>
 
         <div class="progress blue"> <span class="progress-left"> <span class="progress-bar"></span> </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
             <div class="progress-value">68%</div>
@@ -56,6 +59,13 @@ export default {
     height: 100%;
     border-radius: 50%;
     border: 12px solid #fff;
+
+}
+
+
+
+.col-md-6 {
+    width:100%;
 
 }
 

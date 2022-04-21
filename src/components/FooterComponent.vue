@@ -1,22 +1,7 @@
 <template>
   <div class="footerboks">
-
-
-    <div class="ommigfooter">
-      <h2>Om mig</h2>
-      <p>Kasper Schmidt <br>
-      Nygårdsvej 19, 2. sal <br>
-
-      </p>
-    </div>
-
-
-    <div class="kontaktmigfooter">
-      <h2>Kontakt mig</h2>
-      <p>kasper.schmidt1@hotmail.com <br>
-      
-      </p>
-    </div>
+    <h2>Footer</h2>
+    <p>Jeg har valgt ikke at fokusere på footeren. Så den er her bare lige for at være her </p>
 
 
   </div>
@@ -35,6 +20,8 @@ export default {
   width: 100%;
   background-color:#e6e6e6 ;
   display: flex;
+  flex-direction: column;
+
 }
 
 .ommigfooter {
