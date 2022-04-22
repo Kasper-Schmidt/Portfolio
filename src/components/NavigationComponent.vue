@@ -165,11 +165,30 @@ nav {
 
 }
 
-
-
-
-
 } 
+
+
+@media all and (max-width:270px) {
+
+#mitlogo {
+  width: 50px;
+  height: 50px;
+}
+
+.hover-underline-animation {
+  font-size:14px;
+}
+
+nav {
+  margin-left:4px;
+}
+
+#opencv {
+  display:none;
+}
+
+
+}
 
 </style>
 

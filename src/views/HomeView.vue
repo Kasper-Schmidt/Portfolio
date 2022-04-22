@@ -1,5 +1,5 @@
 <template>
-<section>
+
   <div class="home">
     <div class="venhoj">
       <div class="ven">
@@ -46,7 +46,7 @@
       </div>
     </div>
   </div>
-</section>
+
 
 
 
@@ -107,12 +107,10 @@ export default {
 
 
 
-section {
-  height: 100vh;
-}
+
 
 .home {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   background-color: #e6e6e6;
   margin-bottom:2%;
@@ -333,6 +331,9 @@ margin-right:4%;
 
 }
 
+.hoj {
+  display:none;
+}
 .ven {
   width: 80%;
 }
@@ -365,6 +366,44 @@ margin-right:4%;
 }
 
 
+@media all and (max-width:270px) {
+
+h1 {
+  font-size:40px;
+}
+h2 {
+  font-size:35px;
+
+}
+
+.venhoj {
+  width: 100%;
+  height: 400px;
+
+}
+
+.ven {
+  width: 100%;
+  height: 400px;
+}
+
+.hoj {
+  display: none;
+}
+
+p {
+  font-size: 16px;
+  margin:0px;
+}
+
+.videnboks {
+  margin: 5px 0px 0px 15px;
+  width: 80%;
+
+  
+}
+
+}
 
 
 
